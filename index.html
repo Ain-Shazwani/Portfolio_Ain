@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nurul Ain Shazwani | Front End Developer & SEO Technologist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=JetBrains+Mono:wght@500;600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f7fa;--panel:#fff;--line:#dfe5ec;--tx:#1b2430;--mut:#5a6778;--c:#1d5fc4;--a:#8f5500;--g:#1b2430;--code:#edf1f6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12171d;--panel:#1a212a;--line:#2b3541;--tx:#e6ebf0;--mut:#9aa7b5;--c:#7db1ff;--a:#e3b05a;--g:#e6ebf0;--code:#222b36}}
+:root[data-theme="dark"]{--bg:#12171d;--panel:#1a212a;--line:#2b3541;--tx:#e6ebf0;--mut:#9aa7b5;--c:#7db1ff;--a:#e3b05a;--g:#e6ebf0;--code:#222b36}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 16.5px/1.65 "Public Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Public Sans",system-ui,sans-serif;letter-spacing:-.01em}
+a{color:var(--c)}a:focus-visible,button:focus-visible{outline:2px solid var(--c);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:22px;height:58px;overflow-x:auto;white-space:nowrap}
+nav b{font:700 18px "Bricolage Grotesque",system-ui,sans-serif;margin-right:auto}
+nav a{color:var(--mut);text-decoration:none;font-size:15px}nav a:hover{color:var(--tx);text-decoration:underline;text-underline-offset:5px}
+nav button{background:none;border:1px solid var(--line);color:var(--mut);border-radius:8px;padding:5px 12px;font:500 14px "Public Sans",system-ui,sans-serif;cursor:pointer}
+nav button:hover{color:var(--tx)}
+section{padding:84px 0 0}
+h2{font-size:clamp(26px,3.6vw,34px);margin:0 0 10px;font-weight:700}
+.sub{color:var(--mut);margin:0 0 30px;max-width:62ch}
+.hero{padding-top:64px;display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:center}
+h1{font-size:clamp(38px,6.6vw,68px);line-height:1.04;margin:0 0 14px;font-weight:700;letter-spacing:-.025em}
+.role{color:var(--c);font:600 19px "Public Sans",system-ui,sans-serif;margin:0 0 18px}
+.lead{font-size:18px;max-width:50ch;margin:0}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{padding:11px 20px;border-radius:8px;border:1px solid var(--c);color:var(--c);text-decoration:none;font:600 15px "Public Sans",system-ui,sans-serif}
+.btn:hover{background:var(--code)}
+.btn.f{background:var(--c);color:var(--bg)}.btn.f:hover{opacity:.9}
+.ph{justify-self:center;width:min(290px,72vw)}
+.ph img{width:100%;display:block;border-radius:16px;aspect-ratio:228/296;object-fit:cover}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:60px;padding:24px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat b{display:block;font:700 32px "Bricolage Grotesque",system-ui,sans-serif;line-height:1.2}.stat span{font-size:14.5px;color:var(--mut)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px}
+.card h3{margin:0 0 12px;font-size:17px;font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:7px}.tags span{font-size:14px;background:var(--code);padding:4px 12px;border-radius:999px}
+.tl{border-left:2px solid var(--line);margin-left:6px;padding-left:26px}
+.job{position:relative;margin-bottom:38px}
+.job::before{content:"";position:absolute;left:-33px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--c)}
+.job h3{margin:0;font-size:21px}.meta{color:var(--mut);font-size:15px;margin:3px 0 10px}
+.job h4{margin:16px 0 4px;font:600 15px "Public Sans",system-ui,sans-serif;color:var(--c)}
+ul{margin:0;padding-left:20px}li{margin:5px 0}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:18px 0;font-size:14.5px}
+.flow span{background:var(--code);border:1px solid var(--line);border-radius:6px;padding:6px 12px}.flow em{color:var(--mut);font-style:normal}
+.badge{display:inline-block;background:var(--a);color:var(--bg);font:600 13px "Public Sans",system-ui,sans-serif;padding:4px 12px;border-radius:999px;margin-bottom:12px}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:18px}
+.shots img{width:100%;border-radius:8px;border:1px solid var(--line);display:block;cursor:zoom-in}
+.shots figcaption{font-size:13.5px;color:var(--mut);margin-top:6px}.shots figure{margin:0;min-width:0}
+.vid{margin:20px 0 0}.vid video{width:100%;display:block;border-radius:10px;border:1px solid var(--line);background:#000;aspect-ratio:16/9}.vid figcaption{font-size:13.5px;color:var(--mut);margin-top:6px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.contact a{display:block;font-size:17px;margin:8px 0;word-break:break-all}
+footer{margin-top:84px;border-top:1px solid var(--line);padding:26px 0;color:var(--mut);font-size:14px}
+dialog{border:1px solid var(--line);background:var(--panel);padding:8px;border-radius:12px;max-width:92vw}dialog img{max-width:100%;max-height:82vh;display:block}dialog::backdrop{background:#000a}
+.gh{font:600 16px "Public Sans",system-ui,sans-serif;color:var(--tx);margin:34px 0 0}
+.shots.p{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}.shots.l{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.shots figcaption a{margin-left:6px;font-size:13px}
+.ach{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px}.ach span{font:500 13.5px "Public Sans",system-ui,sans-serif;border:1px solid var(--line);padding:3px 12px;border-radius:999px}
+.shots.fix{grid-template-columns:repeat(auto-fit,minmax(200px,290px));justify-content:start}
+.shots.fix.w{grid-template-columns:repeat(auto-fit,minmax(260px,420px))}
+.shots.fix.m{grid-template-columns:repeat(auto-fit,minmax(170px,230px))}
+.gal{display:block;column-width:240px;column-gap:14px}.gal figure{break-inside:avoid;margin-bottom:14px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.ph{order:-1;justify-self:start}.stats{grid-template-columns:repeat(2,1fr)}nav .wrap{gap:16px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* ---- slide decks ---- */
+.deck{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:16px}
+.deck figure{margin:0;min-width:0}.deck figure img{width:100%;border-radius:8px;border:1px solid var(--line);display:block}
+.deck figcaption{font-size:13.5px;color:var(--mut);margin-top:6px}
+.deck.on{display:block;margin-top:16px}
+.stage{position:relative;overflow:hidden;overflow:clip;contain:paint;border-radius:14px;border:1px solid var(--line);background:#0d1218;aspect-ratio:16/10;max-height:74vh;width:100%;cursor:zoom-in;touch-action:pan-y;user-select:none;-webkit-user-select:none}
+.stage:focus-visible{outline:2px solid var(--c);outline-offset:3px}
+.deck.tall .stage{aspect-ratio:4/3.4}
+.track{display:flex;height:100%;transition:transform .45s cubic-bezier(.3,.7,.2,1)}
+.sl{position:relative;flex:0 0 100%;height:100%;overflow:hidden}
+.sl .bg{position:absolute;inset:-30px;background-size:cover;background-position:center;filter:blur(26px) brightness(.5) saturate(1.2)}
+.sl img{position:relative;display:block;width:100%;height:100%;object-fit:contain;padding:14px}
+.nb{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:1px solid #ffffff55;background:#0d1218b8;color:#fff;font-size:20px;line-height:1;cursor:pointer;display:grid;place-items:center;backdrop-filter:blur(6px);transition:background .15s,transform .15s}
+.nb:hover{background:#1d5fc4;transform:translateY(-50%) scale(1.06)}.nb:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.nb.pv{left:12px}.nb.nx{right:12px}
+.bar{display:flex;gap:14px;align-items:flex-start;justify-content:space-between;margin:12px 2px 0}
+.cap{font-size:14.5px;color:var(--tx);min-height:2.7em;margin:0}.cap a{margin-left:8px;font-weight:600;font-size:13px}
+.ct{flex:none;font:600 13px "Public Sans",system-ui,sans-serif;color:var(--mut);background:var(--code);border-radius:999px;padding:4px 12px;font-variant-numeric:tabular-nums}
+.thumbs{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 8px;margin-top:6px;scrollbar-width:thin}
+.th{flex:none;width:76px;height:56px;padding:0;border-radius:8px;border:2px solid transparent;background:var(--code);cursor:pointer;overflow:hidden;opacity:.62;transition:opacity .15s,border-color .15s}
+.th img{width:100%;height:100%;object-fit:cover;display:block}
+.th:hover{opacity:1}.th[aria-current="true"]{opacity:1;border-color:var(--c)}.th:focus-visible{outline:2px solid var(--c);outline-offset:2px}
+dialog.lb{padding:10px;max-width:96vw}dialog.lb figure{margin:0;text-align:center}dialog.lb figcaption{font-size:14px;color:var(--mut);margin-top:8px}
+@media(max-width:600px){.stage,.deck.tall .stage{aspect-ratio:4/4.6}.nb{width:38px;height:38px}.th{width:62px;height:46px}.sl img{padding:8px}}
+@media(prefers-reduced-motion:reduce){.track{transition:none}}
+
+/* ---- IT theme ---- */
+:root{--p:#c2255c;--t:#0b8f7f;--v:#6741d9;--mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--p:#ff7ab0;--t:#4fd6c4;--v:#b197fc}}
+:root[data-theme="dark"]{--p:#ff7ab0;--t:#4fd6c4;--v:#b197fc}
+body{background-image:radial-gradient(60vw 40vh at 100% 0,color-mix(in srgb,var(--p) 14%,transparent),transparent),radial-gradient(60vw 40vh at 0 6%,color-mix(in srgb,var(--c) 14%,transparent),transparent),radial-gradient(var(--line) 1px,transparent 1px);background-size:auto,auto,22px 22px;background-attachment:fixed,fixed,scroll}
+h2{display:flex;align-items:center;gap:12px}
+h2::before{font:600 .5em var(--mono);color:var(--p);background:color-mix(in srgb,var(--p) 13%,transparent);padding:4px 10px;border-radius:6px}
+#about h2::before{content:"//"}#skills h2::before{content:"</>"}#experience h2::before{content:"git log"}#projects h2::before{content:"$ ls"}#education h2::before{content:"#"}#contact h2::before{content:"@"}
+.stat:nth-child(1) b{color:var(--c)}.stat:nth-child(2) b{color:var(--p)}.stat:nth-child(3) b{color:var(--t)}.stat:nth-child(4) b{color:var(--v)}
+.grid>.card{border-top:3px solid var(--k,var(--c))}
+.grid>.card:nth-child(7n+2){--k:var(--p)}.grid>.card:nth-child(7n+3){--k:var(--t)}.grid>.card:nth-child(7n+4){--k:var(--v)}.grid>.card:nth-child(7n+5){--k:var(--a)}.grid>.card:nth-child(7n+6){--k:var(--p)}.grid>.card:nth-child(7n+7){--k:var(--t)}
+.grid>.card h3::before{content:"# ";color:var(--k);font-family:var(--mono)}
+.grid>.card .tags span{background:color-mix(in srgb,var(--k) 13%,var(--panel));border:1px solid color-mix(in srgb,var(--k) 35%,transparent)}
+.flow span{--k:var(--c);border-color:var(--k);background:color-mix(in srgb,var(--k) 12%,var(--panel));font-family:var(--mono);font-size:13px}
+.flow span:nth-of-type(2){--k:var(--v)}.flow span:nth-of-type(3){--k:var(--p)}.flow span:nth-of-type(4){--k:var(--a)}.flow span:nth-of-type(5){--k:var(--t)}
+.flow em{font-family:var(--mono);color:var(--p)}
+.job::before{box-shadow:0 0 0 4px color-mix(in srgb,var(--c) 25%,transparent)}.job:nth-child(2)::before{background:var(--p);box-shadow:0 0 0 4px color-mix(in srgb,var(--p) 25%,transparent)}
+.chrome{display:flex;align-items:center;gap:7px;margin:-22px -22px 18px;padding:10px 16px;background:var(--code);border-bottom:1px solid var(--line);border-radius:12px 12px 0 0;font:500 12.5px var(--mono);color:var(--mut)}
+.chrome i{width:11px;height:11px;border-radius:50%;background:#ff5f57}.chrome i:nth-child(2){background:#febc2e}.chrome i:nth-child(3){background:#28c840;margin-right:8px}
+.code{max-width:560px;margin:22px 0 0;padding:16px 18px;background:#0d1218;color:#cfd8e3;border-radius:12px;font:13.5px/1.7 var(--mono);overflow-x:auto;border-left:4px solid var(--p)}
+.code .k{color:#ff7ab0}.code .s{color:#4fd6c4}.code .p{color:#7db1ff}.code .b{color:#e3b05a}.code .c{color:#6b7a8a}
+.term{max-width:540px;margin-top:22px;background:#0d1218;border-radius:12px;overflow:hidden;font:13.5px/1.7 var(--mono);color:#cfd8e3;box-shadow:0 14px 34px #0003}
+.term .chrome{margin:0;background:#1a222c;border-color:#ffffff1a;color:#9aa7b5;border-radius:0}
+.term .tb2{padding:14px 18px 16px}.term .ln{opacity:0;animation:ln .01s forwards;animation-delay:var(--d)}
+.term .pr{color:#4fd6c4}.term .h{color:#e3b05a}.term .cu{display:inline-block;width:8px;height:15px;background:#4fd6c4;vertical-align:-2px;animation:bl 1s steps(2) infinite}
+@keyframes ln{to{opacity:1}}@keyframes bl{50%{opacity:0}}
+.ph{position:relative}.ph::before{content:"";position:absolute;inset:-9px;border-radius:24px;background:conic-gradient(from 200deg,var(--c),var(--v),var(--p),var(--a),var(--t),var(--c))}
+.ph img{position:relative;border:4px solid var(--bg)}
+.fl{position:absolute;z-index:2;font:600 13px var(--mono);background:var(--panel);border:1px solid var(--line);padding:6px 10px;border-radius:8px;box-shadow:0 6px 18px #0002}
+.fl.a{top:10%;left:-22px;color:var(--c)}.fl.b{bottom:24%;right:-18px;color:var(--p)}.fl.c{bottom:-12px;left:14%;color:var(--t)}
+.zb{position:absolute;top:12px;right:12px;z-index:2;background:#0d1218b8;color:#fff;font:600 12px var(--mono);padding:5px 10px;border-radius:8px;border:1px solid #ffffff44;pointer-events:none}
+dialog.lb{padding:0;width:min(96vw,1200px);height:min(92vh,900px);overflow:hidden;background:#0d1218;color:#e6ebf0;border:1px solid #ffffff22}
+dialog.lb[open]{display:flex;flex-direction:column}
+.tb{display:flex;gap:6px;align-items:center;padding:8px 10px;border-bottom:1px solid #ffffff22}
+.tb button{min-width:38px;height:36px;border-radius:8px;border:1px solid #ffffff33;background:#ffffff12;color:#fff;font:600 16px var(--mono);cursor:pointer}.tb button:hover{background:var(--c)}
+.tb .zl{margin-left:auto;margin-right:6px;font:600 13px var(--mono);color:#9aa7b5}
+.vp{flex:1;min-height:0;position:relative;overflow:hidden;touch-action:none;cursor:zoom-in}.vp.z{cursor:grab}.vp.g{cursor:grabbing}
+.vp img{position:absolute;inset:0;width:100%;height:100%;max-width:none;max-height:none;padding:8px;box-sizing:border-box;object-fit:contain;transform-origin:center;user-select:none;-webkit-user-drag:none;will-change:transform}
+.lc{margin:0;padding:8px 14px;font-size:14px;color:#cdd6e0;border-top:1px solid #ffffff22;min-height:2.6em}
+@media(max-width:760px){.fl.a{left:-6px}.fl.b{right:-4px}}
+
+/* ---- demo logins ---- */
+.demo{margin-top:16px;border:1px solid var(--line);border-radius:12px;background:var(--code);padding:16px 18px}
+.demo h4{margin:0 0 4px;font:600 16px "Public Sans",system-ui,sans-serif;color:var(--tx)}
+.demo p{margin:0 0 12px;font-size:14px;color:var(--mut)}
+.demo .tw{overflow-x:auto}
+.demo table{width:100%;border-collapse:collapse;font-size:14px;min-width:460px}
+.demo th,.demo td{text-align:left;padding:8px 10px;border-top:1px solid var(--line);vertical-align:top}
+.demo th{font:600 12.5px "Public Sans",system-ui,sans-serif;color:var(--mut);border-top:0;text-transform:uppercase;letter-spacing:.04em}
+.demo td.m{font-family:var(--mono,ui-monospace,Menlo,monospace);font-size:13px;word-break:break-all}
+.demo .note{margin:12px 0 0;font-size:13.5px;color:var(--mut)}
+</style></head><body>
+<nav><div class="wrap"><b>Ain Shazwani</b><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a><button id="tg" aria-label="Toggle light or dark theme">Theme</button></div></nav>
+<main class="wrap">
+<header class="hero" id="top">
+<div>
+<h1>Nurul Ain Shazwani</h1>
+<p class="role">Front End Developer &amp; SEO Technologist</p>
+<p class="lead">I build and maintain websites, then make sure people can find them. I recently finished my B.IT and won gold at ITEX 2026 with a smart classroom booking system.</p>
+<div class="term" aria-hidden="true"><div class="chrome"><i></i><i></i><i></i>ain@portfolio: ~</div><div class="tb2"><div class="ln" style="--d:.3s"><span class="pr">$</span> whoami</div><div class="ln" style="--d:.9s">front-end dev, seo technologist</div><div class="ln" style="--d:1.5s"><span class="pr">$</span> git log --oneline -3</div><div class="ln" style="--d:2.1s"><span class="h">a1f9c2</span> gold medal, ITEX 2026</div><div class="ln" style="--d:2.4s"><span class="h">7c2d04</span> 20+ PRs shipped at NexLaw AI</div><div class="ln" style="--d:2.7s"><span class="h">3b8e71</span> graduated B.IT, CGPA 3.82</div><div class="ln" style="--d:3.2s"><span class="pr">$</span> <span class="cu"></span></div></div></div>
+<div class="btns"><a class="btn f" href="#projects">View projects</a><a class="btn" href="https://ain-scbs.freedev.app/" target="_blank" rel="noopener">Live SCBS website &#8599;</a><a class="btn" href="#contact">Get in touch</a></div>
+</div>
+<div class="ph"><img src="assets/photo.jpg" alt="Portrait of Nurul Ain Shazwani"><span class="fl a">&lt;/&gt;</span><span class="fl b">{ }</span><span class="fl c">GA4 + SEO</span></div>
+</header>
+<div class="stats">
+<div class="stat"><b>50+</b><span>client websites supported</span></div>
+<div class="stat"><b>30+</b><span>schema markups deployed</span></div>
+<div class="stat"><b>20+</b><span>pull requests raised</span></div>
+<div class="stat"><b>3.82</b><span>CGPA, B.IT (Hons)</span></div>
+</div>
+
+<section id="about"><h2>About</h2>
+<p class="sub">Entry-level IT graduate in Application Development, with hands-on experience in web development, databases and technical SEO/AEO.</p>
+<p style="max-width:70ch">I build and maintain websites, then make sure people can find them. My internships covered frontend development, WordPress operations, structured data and search reporting. I am detail-oriented, comfortable with Agile and SDLC practices, and I have led student and university programmes. I am looking for a role where I can contribute to technology-driven projects.</p><pre class="code" aria-label="Summary as a code snippet"><span class="k">const</span> <span class="p">ain</span> = {
+  <span class="p">role</span>: <span class="s">"Front End Dev &amp; SEO Technologist"</span>,
+  <span class="p">stack</span>: [<span class="s">"HTML/CSS"</span>, <span class="s">"JavaScript"</span>, <span class="s">"PHP"</span>, <span class="s">"Astro"</span>],
+  <span class="p">iot</span>: [<span class="s">"ESP32-CAM"</span>, <span class="s">"PIR sensors"</span>, <span class="s">"MySQL"</span>],
+  <span class="p">award</span>: <span class="s">"Gold, ITEX 2026"</span>,
+  <span class="p">openToWork</span>: <span class="b">true</span>, <span class="c">// entry-level roles</span>
+};</pre>
+</section>
+
+<section id="skills"><h2>Skills</h2><p class="sub">Tools I use day to day, grouped by area.</p>
+<div class="grid">
+<div class="card"><h3>Languages</h3><div class="tags"><span>Java</span><span>JavaScript</span><span>Python</span><span>C</span><span>Prolog</span></div></div>
+<div class="card"><h3>Web and application development</h3><div class="tags"><span>HTML</span><span>CSS</span><span>PHP</span><span>WordPress</span><span>Astro</span><span>XHTML</span><span>Responsive design</span><span>UI/UX</span></div></div>
+<div class="card"><h3>Databases and ETL</h3><div class="tags"><span>MySQL</span><span>SQL</span><span>Relational design</span><span>Normalization</span><span>Talend ETL</span></div></div>
+<div class="card"><h3>SEO, AEO and analytics</h3><div class="tags"><span>Technical SEO</span><span>On-page SEO</span><span>JSON-LD schema</span><span>Search Console</span><span>GA4</span><span>Tag Manager</span><span>Google Ads</span><span>AEO/GEO</span></div></div>
+<div class="card"><h3>Tools and platforms</h3><div class="tags"><span>Git &amp; GitHub</span><span>Pull requests</span><span>WooCommerce</span><span>Cloudflare DNS</span><span>Smartlead</span><span>Office suite</span></div></div>
+<div class="card"><h3>AI tools</h3><div class="tags"><span>Claude</span><span>Google AI Studio</span><span>ChatGPT</span><span>Gemini</span><span>Perplexity</span></div><p style="font-size:14px;color:var(--mut);margin:10px 0 0">Used for content, keyword and report automation, and a custom outreach tracking tool.</p></div>
+<div class="card"><h3>Engineering practice</h3><div class="tags"><span>OOP</span><span>Software testing</span><span>SDLC</span><span>Agile Scrum</span><span>System analysis</span><span>Documentation</span></div></div>
+</div></section>
+
+<section id="experience"><h2>Experience</h2><p class="sub">Two internships, most recent first.</p>
+<div class="tl">
+<div class="job"><h3>Front End &amp; Web Developer Intern</h3><div class="meta">NexLaw AI Sdn. Bhd., Technical Department, May 2026 – Oct 2026</div>
+<h4>Frontend development &amp; site operations</h4><ul>
+<li>Built and shipped frontend features on Nexlaw.ai (Astro/WordPress): comparison, case study and campaign pages, with 20+ PRs raised for review.</li>
+<li>Configured GTM/GA4 conversion and cross-domain tracking, and Google Ads campaigns.</li>
+<li>Resolved WordPress, WooCommerce and email/DNS issues for 25+ client accounts.</li>
+<li>Restructured a 50+ page multi-region site into a localized architecture.</li></ul>
+<h4>SEO, AEO &amp; content strategy</h4><ul>
+<li>Ran monthly SEO reporting for 50+ client websites, generating and auditing 150+ reports from GSC, GA4 and tracking sheets.</li>
+<li>Delivered on-page SEO and implementation plans across 20+ sites, including a 22-link 404 redirect cleanup.</li>
+<li>Deployed 30+ structured data schemas (BreadcrumbList, FAQPage, LocalBusiness, Service).</li>
+<li>Delivered 100+ blog topic proposals and drafts.</li></ul></div>
+<div class="job"><h3>IT Intern</h3><div class="meta">Augmented Technology Sdn. Bhd., Creative AR Department, May 2023 – Sept 2023</div>
+<h4>Web development (Tin Board &amp; MTPMA websites)</h4><ul>
+<li>Built and improved WordPress sites from client requirements, updating layouts, UI components and content.</li>
+<li>Wrote user manuals and technical documentation, and troubleshot issues with the Creative AR team.</li></ul>
+<h4>ETL project (eKasih, Talend)</h4><ul>
+<li>Supported ETL data flow development and testing, ran data validation tests and documented components.</li></ul></div>
+</div></section>
+
+<section id="projects"><h2>Projects</h2><p class="sub">A final year project that won gold, with its demo video, interface screens, certificates, IP filings, posters, user manual and pamphlet, and the diploma system that started it.</p>
+<div class="card" style="margin-bottom:18px"><div class="chrome"><i></i><i></i><i></i>projects/scbs/README.md</div><span class="badge">Gold Award, ITEX 2026</span>
+<h3 style="font-size:20px;color:var(--tx)">UPTM IoT Smart Classroom Booking System (SCBS)</h3>
+<p style="margin:0 0 6px;color:var(--mut);font-size:14px" class="mono">Bachelor's final year project, 2026</p>
+<p>A software and hardware system that modernises campus facility management, saves energy and keeps working through power outages. It was selected to represent Universiti Poly-Tech Malaysia at ITEX 2026, the 37th International Invention, Innovation, Technology Competition &amp; Exhibition (Malaysia, 18&ndash;19 May 2026), where the project team won a Gold Medal. A copyright was filed on 6 May 2026 and a patent application on 13 May 2026.</p>
+<div class="flow" aria-label="Access flow"><span>Book room</span><em>→</em><span>QR token</span><em>→</em><span>ESP32-CAM</span><em>→</em><span>Validate session</span><em>→</em><span>Smart lock opens</span></div>
+<ul><li>Responsive web app with role-based dashboards (student, lecturer and admin) and automated booking algorithms that prevent double-booked rooms, plus email reminders. It is deployed and running at <a href="https://ain-scbs.freedev.app/" target="_blank" rel="noopener">ain-scbs.freedev.app</a>.</li>
+<li>QR code access replaces physical keys: an ESP32-CAM at the door validates the session and actuates the lock.</li>
+<li>PIR occupancy sensors cut power to utilities after 15 minutes of vacancy.</li>
+<li>Emergency power supply keeps smart locks working during outages.</li>
+<li>MySQL schema and RESTful APIs, with technical documentation aligned to academic rubrics.</li></ul>
+<div class="ach"><span>Copyright No. LY2026W02824</span><span>Patent application no. PI2026002881</span></div>
+<div class="tags" style="margin-top:14px"><span>PHP</span><span>JavaScript</span><span>MySQL</span><span>REST API</span><span>C</span><span>ESP32-CAM</span><span>IoT</span><span>Bootstrap</span></div>
+<div class="btns" style="margin-top:18px"><a class="btn f" href="https://ain-scbs.freedev.app/" target="_blank" rel="noopener">Open the live SCBS website &#8599;</a><span class="mono" style="font-size:13px;color:var(--mut);align-self:center">ain-scbs.freedev.app</span></div>
+<div class="demo" id="demo-login"><h4>Demo logins</h4><p>The live site opens on a login page. Use these demo accounts to explore each role.</p>
+<div class="tw"><table><thead><tr><th>Role</th><th>ID / Email</th><th>Password</th><th>Device</th></tr></thead><tbody>
+<tr><td>Lecturer</td><td class="m">LC1<br>lecturer1@uptm.edu.my</td><td class="m">lecturer123</td><td>Desktop or mobile</td></tr>
+<tr><td>Student</td><td class="m">ST1<br>student1@uptm.edu.my</td><td class="m">student123</td><td>Desktop or mobile</td></tr>
+<tr><td>Admin</td><td class="m">AD1</td><td class="m">admin123</td><td>Desktop only</td></tr>
+</tbody></table></div>
+<p class="note">On mobile, sign in with the ID/email and password above. Do not use the "Sign in with Google" option.</p></div>
+<figure class="vid"><video controls playsinline preload="metadata" poster="assets/scbs-poster.jpg" aria-label="SCBS demo video from ITEX 2026"><source src="assets/scbs-itex-demo.mp4" type="video/mp4"></video><figcaption>SCBS demo video, ITEX 2026 (57 seconds)</figcaption></figure>
+<h4 class="gh">System interface</h4>
+<div class="deck" data-label="System interface screens"><figure><img src="assets/awards/scbs-ui-desktop-dashboard.jpg" alt="SCBS booking dashboard on desktop showing three available classrooms and an availability overview" loading="lazy"><figcaption>Desktop booking dashboard: live room status, search and filters</figcaption></figure><figure><img src="assets/awards/scbs-ui-booking-form.jpg" alt="SCBS booking form with name, ID, date, purpose and start and end time" loading="lazy"><figcaption>Booking form with availability check</figcaption></figure><figure><img src="assets/awards/scbs-ui-mobile-dashboard.jpg" alt="SCBS booking dashboard on a phone" loading="lazy"><figcaption>Mobile dashboard</figcaption></figure><figure><img src="assets/awards/scbs-ui-mobile-menu.jpg" alt="SCBS mobile menu with dashboard, history, upcoming bookings, account and logout" loading="lazy"><figcaption>Mobile menu: history, upcoming, account</figcaption></figure></div>
+<h4 class="gh">Awards and intellectual property</h4>
+<div class="deck" data-label="Awards and IP documents"><figure><img src="assets/awards/itex-2026-gold-certificate.jpg" alt="ITEX 2026 Certificate of Award: Gold Medal for the UPTM IoT Smart Classroom Booking System" loading="lazy"><figcaption>Certificate of Award: ITEX 2026 Gold Medal<a href="assets/pdf/Cert_Award_Gold_UPTM_IoT_SCBS.pdf" target="_blank" rel="noopener">PDF</a></figcaption></figure><figure><img src="assets/awards/itex-2026-merit-certificate.jpg" alt="ITEX 2026 Certificate of Merit for showcasing the UPTM IoT Smart Classroom Booking System" loading="lazy"><figcaption>Certificate of Merit: ITEX 2026<a href="assets/pdf/Cert_Merit_UPTM_IoT_SCBS.pdf" target="_blank" rel="noopener">PDF</a></figcaption></figure><figure><img src="assets/awards/myipo-copyright-receipt.jpg" alt="MyIPO official receipt for copyright filing LY2026W02824, RM250, 6 May 2026" loading="lazy"><figcaption>MyIPO receipt: copyright LY2026W02824, 6 May 2026<a href="assets/pdf/receipt_copyright.pdf" target="_blank" rel="noopener">PDF</a></figcaption></figure><figure><img src="assets/awards/myipo-patent-receipt.jpg" alt="MyIPO official receipt for patent application PI2026002881, RM1,500, 13 May 2026" loading="lazy"><figcaption>MyIPO receipt: patent application PI2026002881, 13 May 2026<a href="assets/pdf/receipt_patent.pdf" target="_blank" rel="noopener">PDF</a></figcaption></figure></div>
+<h4 class="gh">At ITEX 2026</h4>
+<div class="deck tall" data-label="ITEX 2026 photos"><figure><img src="assets/itex/itex-4.jpg" alt="Team on stage with the Gold Award screen and UPTM banner" loading="lazy"><figcaption>Gold Award presentation at Malam Budaya Cipta, ITEX 2026</figcaption></figure><figure><img src="assets/itex/itex-32.jpg" alt="Four team members and a lecturer holding gold medals" loading="lazy"><figcaption>Team with our gold medals</figcaption></figure><figure><img src="assets/itex/itex-5.jpg" alt="Team member holding the ITEX 2026 gold medal in its red box" loading="lazy"><figcaption>The ITEX 2026 gold medal</figcaption></figure><figure><img src="assets/itex/itex-7.jpg" alt="ITEX 2026 gold medal in a red presentation box" loading="lazy"><figcaption>Gold medal close-up</figcaption></figure><figure><img src="assets/itex/itex-28.jpg" alt="Team member holding the gold medal beside the prototype and poster" loading="lazy"><figcaption>Gold medal at the SCBS booth</figcaption></figure><figure><img src="assets/itex/itex-9.jpg" alt="UPTM staff and students in front of booth 1H120 and 1H121" loading="lazy"><figcaption>UPTM team at the exhibition booth</figcaption></figure><figure><img src="assets/itex/itex-17.jpg" alt="UPTM team posing in front of the SCBS and RoomEase posters" loading="lazy"><figcaption>Team and lecturers at the booth</figcaption></figure><figure><img src="assets/itex/itex-18.jpg" alt="Five people at the booth with the SCBS prototype and desk" loading="lazy"><figcaption>SCBS team at the booth</figcaption></figure><figure><img src="assets/itex/itex-10.jpg" alt="Team at the SCBS desk with a mini classroom model" loading="lazy"><figcaption>Booth with the prototype and QR demo</figcaption></figure><figure><img src="assets/itex/itex-14.jpg" alt="Team members at the booth with the IoT prototype" loading="lazy"><figcaption>Team at the SCBS booth</figcaption></figure><figure><img src="assets/itex/itex-8.jpg" alt="Wide view of the UPTM booth and neighbouring stands" loading="lazy"><figcaption>Booth overview</figcaption></figure><figure><img src="assets/itex/itex-15.jpg" alt="Team member presenting SCBS to visitors beside the prototype" loading="lazy"><figcaption>Explaining the system to visitors</figcaption></figure><figure><img src="assets/itex/itex-11.jpg" alt="Team member demonstrating the booking app on a phone" loading="lazy"><figcaption>Showing the booking app to a visitor</figcaption></figure><figure><img src="assets/itex/itex-21.jpg" alt="Team member explaining the project to a guest at the booth" loading="lazy"><figcaption>Presenting SCBS to a visiting guest</figcaption></figure><figure><img src="assets/itex/itex-12.jpg" alt="Visitors and team around the ESP32 prototype and poster" loading="lazy"><figcaption>Live demo with the hardware prototype</figcaption></figure><figure><img src="assets/itex/itex-3.jpg" alt="Booth desk with prototype, QR codes and a monitor showing the demo video" loading="lazy"><figcaption>Demo video playing at the booth</figcaption></figure><figure><img src="assets/itex/itex-2.jpg" alt="Visitors and organisers at the booth while a poster is hung" loading="lazy"><figcaption>Setting up posters before opening</figcaption></figure><figure><img src="assets/itex/itex-30.jpg" alt="Team members with the ITEX sign and Malam Budaya Cipta backdrop" loading="lazy"><figcaption>At the ITEX 2026 sign</figcaption></figure><figure><img src="assets/itex/itex-1.jpg" alt="Three ITEX exhibitor badges for Universiti Poly-Tech Malaysia" loading="lazy"><figcaption>Exhibitor badges, KL Convention Centre</figcaption></figure></div>
+<h4 class="gh">Design and documentation</h4>
+<div class="deck" data-label="Design and documentation"><figure><img src="assets/design/scbs-poster-itex-1.jpg" alt="SCBS ITEX 2026 exhibition poster with members, results and achievements" loading="lazy"><figcaption>ITEX 2026 exhibition poster<a href="assets/pdf/POSTER_ITEX_WITH_PATENT_NUMBER.pdf" target="_blank" rel="noopener">PDF</a></figcaption></figure><figure><img src="assets/design/scbs-user-manual-1.jpg" alt="SCBS user manual poster showing mobile and administrator interface walkthrough" loading="lazy"><figcaption>User manual: mobile and admin walkthrough<a href="assets/pdf/User_Manual_SCBS.pdf" target="_blank" rel="noopener">PDF</a></figcaption></figure><figure><img src="assets/design/scbs-promo-poster-1.jpg" alt="SCBS promotional poster: smarter spaces, stronger security, sustainable operations" loading="lazy"><figcaption>Promotional poster<a href="assets/pdf/Attractive_Poster.pdf" target="_blank" rel="noopener">PDF</a></figcaption></figure><figure><img src="assets/design/scbs-pamphlet-1.jpg" alt="SCBS pamphlet front: about, objectives and main issues" loading="lazy"><figcaption>Pamphlet, outside panels<a href="assets/pdf/Pamphlet_design.pdf" target="_blank" rel="noopener">PDF</a></figcaption></figure><figure><img src="assets/design/scbs-pamphlet-2.jpg" alt="SCBS pamphlet inside: impacts, features and available devices" loading="lazy"><figcaption>Pamphlet, inside panels</figcaption></figure><figure><img src="assets/design/scbs-logo-cover-1.jpg" alt="IoT Smart Classroom Booking System logo cover" loading="lazy"><figcaption>Logo and cover art<a href="assets/pdf/SCBS_LOGO_COVER__OPTIONAL_.pdf" target="_blank" rel="noopener">PDF</a></figcaption></figure></div>
+</div>
+
+<div class="card"><div class="chrome"><i></i><i></i><i></i>projects/e-memo/README.md</div><h3 style="font-size:20px;color:var(--tx)">KVKS E-Memo System</h3>
+<p style="margin:0 0 6px;color:var(--mut);font-size:14px" class="mono">Diploma capstone project, Kolej Vokasional Kuala Selangor, Jan 2023</p>
+<p>A memo system for college staff to create, send and read memos, with separate user and admin views.</p>
+<ul><li>Responsive web app built with Bootstrap, JavaScript, HTML, CSS, PHP and MySQL.</li>
+<li>CRUD functions for memos and users, connected to a secure database.</li>
+<li>UI/UX principles applied for accessibility and mobile responsiveness.</li></ul>
+<div class="deck tall" data-label="E-Memo screens">
+<figure><img src="assets/e-memo-1.jpg" alt="E-Memo login page and user inbox"><figcaption>Login and user inbox</figcaption></figure>
+<figure><img src="assets/e-memo-2.jpg" alt="E-Memo sent memo list and create memo form"><figcaption>Sent memos and create memo form</figcaption></figure>
+<figure><img src="assets/e-memo-3.jpg" alt="E-Memo admin edit user and memo history"><figcaption>Admin: edit user and memo history</figcaption></figure>
+</div><div class="tags" style="margin-top:14px"><span>Bootstrap</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>CRUD</span></div></div>
+</section>
+
+<section id="education"><h2>Education</h2><p class="sub">Formal training, certification and leadership.</p>
+<div class="two">
+<div class="card"><h3>Bachelor of Information Technology (Hons), Computer Application Development</h3><p class="mono" style="margin:0 0 8px;font-size:13px;color:var(--mut)">Universiti Poly-Tech Malaysia, May 2024 – Aug 2026, CGPA 3.82</p><ul><li>Full-stack apps with Java, JavaScript and SQL; RESTful APIs and responsive interfaces.</li><li>Agile Scrum: sprint planning, stand-ups, retrospectives.</li><li>Normalized databases and indexed queries.</li></ul></div>
+<div class="card"><h3>Diploma in Database Management &amp; Web Application</h3><p class="mono" style="margin:0 0 8px;font-size:13px;color:var(--mut)">Kolej Vokasional Kuala Selangor, Jan 2019 – Jan 2023, CGPA 3.83</p><ul><li>Relational database design, SQL and web application fundamentals.</li><li>CRUD web app capstone with full documentation.</li><li>Student representative roles.</li></ul></div>
+<div class="card"><h3>CompTIA Cloud+ (CV0-004)</h3><p class="mono" style="margin:0 0 8px;font-size:13px;color:var(--mut)">Certified December 2025</p><p style="margin:0">Validates skills in cloud infrastructure, virtualization and security.</p></div>
+<div class="card"><h3>Leadership</h3><ul><li><b>Assistant Project Manager, SULAM SPARK 2025:</b> coordinated operations and flow for six interactive technology booths.</li><li><b>Exco, Student Representative Council, 2020–2021:</b> organised college e-sports tournaments (PUBG 2020, MLBB 2021).</li></ul></div>
+</div></section>
+
+<section id="contact"><h2>Contact</h2><p class="sub">Open to entry-level roles in web development, frontend and technical SEO.</p>
+<div class="card contact"><a href="mailto:ainshaz7803@gmail.com">ainshaz7803@gmail.com</a><a href="tel:+60163922198">016-392 2198</a><a href="https://www.linkedin.com/in/nurulainshazwani/" target="_blank" rel="noopener">linkedin.com/in/nurulainshazwani</a><a href="https://ain-scbs.freedev.app/" target="_blank" rel="noopener">SCBS live website: ain-scbs.freedev.app</a><span class="mono" style="font-size:13px;color:var(--mut)">Petaling Jaya, Selangor</span></div></section>
+</main>
+<footer><div class="wrap">© <span id="y"></span> Nurul Ain Shazwani, built with HTML, CSS and a little JavaScript</div></footer>
+<dialog id="dlg" class="lb" aria-label="Image viewer"><div class="tb"><button id="zp" aria-label="Previous image">&#8249;</button><button id="zn" aria-label="Next image">&#8250;</button><button id="zo" aria-label="Zoom out">&minus;</button><button id="zi" aria-label="Zoom in">+</button><button id="zr" aria-label="Reset zoom">Fit</button><span class="zl" id="zl">100%</span><button id="zx" aria-label="Close">&#10005;</button></div><div class="vp"><img alt=""></div><p class="lc" id="lc"></p></dialog>
+<script>
+(function(){
+document.getElementById("y").textContent=new Date().getFullYear();
+var r=document.documentElement;try{var v=localStorage.getItem("th");if(v)r.setAttribute("data-theme",v)}catch(e){}
+document.getElementById("tg").onclick=function(){var cur=r.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:light)").matches?"light":"dark");var n=cur==="dark"?"light":"dark";r.setAttribute("data-theme",n);try{localStorage.setItem("th",n)}catch(e){}};
+})();
+
+(function(){
+var d=document.getElementById("dlg"),vp=d.querySelector(".vp"),di=vp.querySelector("img"),dc=document.getElementById("lc"),zl=document.getElementById("zl"),act=null,z=1,tx=0,ty=0,pts={};
+function el(t,c){var e=document.createElement(t);if(c)e.className=c;return e}
+function ap(){if(z<=1){z=1;tx=ty=0}var mx=vp.clientWidth*(z-1)/2,my=vp.clientHeight*(z-1)/2;tx=Math.max(-mx,Math.min(mx,tx));ty=Math.max(-my,Math.min(my,ty));di.style.transform="translate("+tx+"px,"+ty+"px) scale("+z+")";zl.textContent=Math.round(z*100)+"%";vp.classList.toggle("z",z>1)}
+function zm(f,cx,cy){var n=Math.min(5,Math.max(1,z*f)),k=n/z,ox=0,oy=0;if(cx!=null){var r=vp.getBoundingClientRect();ox=cx-r.left-r.width/2;oy=cy-r.top-r.height/2}tx=ox-(ox-tx)*k;ty=oy-(oy-ty)*k;z=n;ap()}
+function showLB(k){var it=k.items[k.cur];di.src=it.src;di.alt=it.alt;dc.innerHTML=it.cap;z=1;tx=ty=0;ap()}
+function nav(s){if(act){act.go(act.cur+s);showLB(act)}}
+function $(i){return document.getElementById(i)}
+$("zi").onclick=function(){zm(1.5)};$("zo").onclick=function(){zm(1/1.5)};$("zr").onclick=function(){z=1;ap()};$("zx").onclick=function(){d.close()};$("zp").onclick=function(){nav(-1)};$("zn").onclick=function(){nav(1)};
+d.onclick=function(e){if(e.target===d)d.close()};
+d.addEventListener("keydown",function(e){var k=e.key;if(k==="ArrowRight")nav(1);else if(k==="ArrowLeft")nav(-1);else if(k==="+"||k==="=")zm(1.3);else if(k==="-")zm(1/1.3);else if(k==="0"){z=1;ap()}});
+d.addEventListener("close",function(){act=null});
+vp.addEventListener("wheel",function(e){e.preventDefault();var dy=e.deltaMode===1?e.deltaY*33:e.deltaY,f=Math.exp(-dy*(e.ctrlKey?0.01:0.0015));zm(Math.min(2,Math.max(.5,f)),e.clientX,e.clientY)},{passive:false});addEventListener("resize",ap);
+vp.addEventListener("dblclick",function(e){if(z>1)zm(1/z);else zm(2.5,e.clientX,e.clientY)});
+vp.addEventListener("pointerdown",function(e){pts[e.pointerId]={x:e.clientX,y:e.clientY};vp.setPointerCapture(e.pointerId);if(z>1)vp.classList.add("g")});
+vp.addEventListener("pointermove",function(e){var p=pts[e.pointerId];if(!p)return;var ids=Object.keys(pts);
+if(ids.length===2){var o=pts[ids[0]==e.pointerId?ids[1]:ids[0]],a=Math.hypot(p.x-o.x,p.y-o.y),b=Math.hypot(e.clientX-o.x,e.clientY-o.y);if(a>0)zm(b/a,(e.clientX+o.x)/2,(e.clientY+o.y)/2)}
+else if(z>1){tx+=e.clientX-p.x;ty+=e.clientY-p.y;ap()}
+p.x=e.clientX;p.y=e.clientY});
+function up(e){delete pts[e.pointerId];vp.classList.remove("g")}
+vp.addEventListener("pointerup",up);vp.addEventListener("pointercancel",up);
+document.querySelectorAll(".deck").forEach(function(root){
+var figs=[].slice.call(root.querySelectorAll("figure")),n=figs.length;if(!n)return;
+var items=figs.map(function(f){var im=f.querySelector("img");return{src:im.getAttribute("src"),alt:im.alt,cap:(f.querySelector("figcaption")||{}).innerHTML||""}});
+var cur=0,self={items:items,cur:0};
+root.innerHTML="";root.classList.add("on");
+var stage=el("div","stage");stage.tabIndex=0;stage.setAttribute("role","group");stage.setAttribute("aria-roledescription","carousel");stage.setAttribute("aria-label",root.getAttribute("data-label")||"Image slides");
+var track=el("div","track"),bgs=[],slides=[];
+items.forEach(function(it,i){var s=el("div","sl"),b=el("div","bg"),im=new Image();im.src=it.src;im.alt=it.alt;im.draggable=false;if(i>1)im.loading="lazy";s.setAttribute("role","group");s.setAttribute("aria-label",(i+1)+" of "+n);s.appendChild(b);s.appendChild(im);track.appendChild(s);bgs.push(b);slides.push(s)});
+stage.appendChild(track);var zb=el("span","zb");zb.textContent="+ zoom";stage.appendChild(zb);
+var pv=el("button","nb pv"),nx=el("button","nb nx");pv.type=nx.type="button";pv.innerHTML="&#8592;";nx.innerHTML="&#8594;";pv.setAttribute("aria-label","Previous slide");nx.setAttribute("aria-label","Next slide");
+if(n>1){stage.appendChild(pv);stage.appendChild(nx)}
+var bar=el("div","bar"),cap=el("p","cap"),ct=el("span","ct");cap.setAttribute("aria-live","polite");bar.appendChild(cap);bar.appendChild(ct);
+root.appendChild(stage);root.appendChild(bar);
+var ths=[],strip=null;
+if(n>2){strip=el("div","thumbs");items.forEach(function(it,i){var b=el("button","th");b.type="button";b.setAttribute("aria-label","Go to slide "+(i+1));var im=new Image();im.src=it.src;im.alt="";im.loading="lazy";b.appendChild(im);b.onclick=function(){go(i)};strip.appendChild(b);ths.push(b)});root.appendChild(strip)}
+function paint(i){if(i>=0&&i<n&&!bgs[i].style.backgroundImage)bgs[i].style.backgroundImage='url("'+items[i].src+'")'}
+function go(i){cur=(i+n)%n;self.cur=cur;track.style.transform="translateX(-"+cur*100+"%)";
+cap.innerHTML=items[cur].cap;ct.textContent=(cur+1)+" / "+n;
+slides.forEach(function(s,k){s.setAttribute("aria-hidden",k===cur?"false":"true")});
+paint(cur-1);paint(cur);paint(cur+1);
+ths.forEach(function(b,k){if(k===cur){b.setAttribute("aria-current","true");strip.scrollTo({left:b.offsetLeft-(strip.clientWidth-b.offsetWidth)/2,behavior:"smooth"})}else b.removeAttribute("aria-current")})}
+self.go=go;
+pv.onclick=function(e){e.stopPropagation();go(cur-1)};nx.onclick=function(e){e.stopPropagation();go(cur+1)};
+stage.addEventListener("keydown",function(e){if(e.key==="ArrowRight"){go(cur+1);e.preventDefault()}else if(e.key==="ArrowLeft"){go(cur-1);e.preventDefault()}else if(e.key==="Enter"||e.key===" "){openLB();e.preventDefault()}});
+var sx=null,moved=false;
+stage.addEventListener("pointerdown",function(e){sx=e.clientX;moved=false});
+stage.addEventListener("pointerup",function(e){if(sx===null)return;var dx=e.clientX-sx;sx=null;if(Math.abs(dx)>45&&n>1){moved=true;go(cur+(dx<0?1:-1))}});
+stage.addEventListener("pointercancel",function(){sx=null});
+function openLB(){act=self;showLB(self);d.showModal()}
+stage.addEventListener("click",function(e){if(moved){moved=false;return}if(e.target.closest(".nb"))return;openLB()});
+go(0);
+});
+})();
+</script></body></html>
